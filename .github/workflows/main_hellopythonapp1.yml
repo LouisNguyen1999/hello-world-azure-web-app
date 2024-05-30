@@ -26,15 +26,6 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      
-      - name: Install dependencies1
-        run: cd hello-world-azure-web-app-main/
-
-      # - name: Install dependencies2
-      #   run: cd hello-world-azure-web-app-main
-        
-      - name: Install dependencies3
-        run: ls
         
       - name: Install dependencies4
         run: pip install -r hello-world-azure-web-app-main/requirements.txt
