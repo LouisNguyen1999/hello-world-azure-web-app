@@ -28,7 +28,7 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies1
-        run: cd hello-world-azure-web-app-main
+        run: cd hello-world-azure-web-app-main/hello-world-azure-web-app-main
         
       - name: Install dependencies2
         run: ls
