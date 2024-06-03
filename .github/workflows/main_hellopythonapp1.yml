@@ -26,9 +26,9 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-        
-      - name: Install dependencies4
-        run: pip install -r hello-world-azure-web-app-main/requirements.txt
+      
+      - name: Install dependencies
+        run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -65,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E9127DD2DD3F4AABAAC7FB9FCB9F96C8 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D2215B4643B648429A37EA7DBB67A009 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D484F508D90A45079383027C20122F7B }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_261D3162003C4A7EB265D85487030508 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5A4035BF777C4AC8A3EDD423A6E7D939 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_20CAAE49B6644CD8AA61DD64FFD76C31 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
